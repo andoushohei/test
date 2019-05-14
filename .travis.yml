@@ -1,3 +1,8 @@
 language: node_js
-script:
-- true
+
+matrix:
+  include:
+    - name: foo
+      script: true
+    - name: bar
+      script: false
